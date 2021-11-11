@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const knex = require("../database");
+
 //Returns all reviews
 router.get("/", async (request, response) => {
   try {
