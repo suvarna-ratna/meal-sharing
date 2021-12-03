@@ -2,16 +2,9 @@ const express = require("express");
 const { prependListener } = require("../database");
 const router = express.Router();
 const knex = require("../database");
-//Returns all meals
-router.get("/", async (request, response) => {
-  try {
-    // knex syntax for selecting things. Look up the documentation for knex for further info
-    const titles = await knex("meal");
-    response.json(titles);
-  } catch (error) {
-    throw error;
-  }
-});
+
+
+
 //Returns all meal titles
 router.get("/titles", async (request, response) => {
   try {
@@ -22,6 +15,7 @@ router.get("/titles", async (request, response) => {
     throw error;
   }
 });
+
 //Adds a new meal
 router.post("/", async (request, response) => {
   try {
@@ -32,6 +26,7 @@ router.post("/", async (request, response) => {
     throw error;
   }
 });
+
 //Returns meal by id
 router.get("/:id", async (request, response) => {
   try {
@@ -42,6 +37,7 @@ router.get("/:id", async (request, response) => {
     throw error;
   }
 });
+
 //Updates the meal by id
 router.put("/:id", async (request, response) => {
   try {
@@ -54,6 +50,7 @@ router.put("/:id", async (request, response) => {
     throw error;
   }
 });
+
 //Deletes the meal by id
 router.delete("/:id", async (request, response) => {
   try {
@@ -66,6 +63,7 @@ router.delete("/:id", async (request, response) => {
     throw error;
   }
 });
+
 //query params
 router.get("/", async (request, response) => {
   const query = request.query;
