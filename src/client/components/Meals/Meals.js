@@ -5,7 +5,7 @@ import Header from '../Header/Header';
 
 const Meals = (props) => {
     return (
-        <div className="meals"><Header/>
+        <div className="meals">
             <h1>Meals</h1>
             <ul>
       {props.meals.map((meal)=>
@@ -16,7 +16,6 @@ const Meals = (props) => {
           </li>
       ) }
      </ul>
-            <Footer/>
         </div>
     );
 }

@@ -1,11 +1,16 @@
-import React from 'react';
+import React from "react";
 import "./Footer.css";
 const Footer = () => {
-    return (
-        <div className="footer">
-            <h1>Footer</h1>
-        </div>
-    );
-}
+  return (
+    <div className="footer">
+      <ul>
+        <li>Facebook</li>
+        <li>Instagram</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+  );
+};
 
 export default Footer;
