@@ -7,9 +7,12 @@ import AboutUs from "./components/AboutUs/AboutUs";
 import AddMeal from "./components/AddMeal/AddMeal";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import MealsDetails from "./components/MealsDetails/MealsDetails";
 
 function App() {
   const [meals, setMeals] = React.useState([]);
+  const [reviews, setrReviews] = React.useState([]);
+  const [reservations, setReservations] = React.useState([]);
   React.useEffect(() => {
     fetch("/api/meals")
       .then((response) => response.json())
@@ -17,28 +20,37 @@ function App() {
         setMeals(data);
         console.log(data);
       });
+      fetch("/api/reviews")
+      .then((response) => response.json())
+      .then((data) => {
+        setrReviews(data);
+        console.log(data);
+      });
+      fetch("/api/reservations")
+      .then((response) => response.json())
+      .then((data) => {
+        setReservations(data);
+        console.log(data);
+      });
   }, []);
   return (
         <Router>
+           <Header/>
+          <Switch>
           <Route exact path="/">
-            <Header/>
             <Home meals={meals} />
-            <Footer/>
           </Route>
           <Route exact path="/meals">
-          <Header/>
             <Meals meals={meals} />
-            <Footer/>
+          </Route>
+          <Route exact path="/meals/:id">
+            <MealsDetails meals={meals} />
           </Route>
           <Route exact path="/add-meal">
-          <Header/>
             <AddMeal />
-            <Footer/>
           </Route>
           <Route exact path="/about-us">
-          <Header/>
             <AboutUs />
-            <Footer/>
           </Route>
           <Route exact path="/lol">
             <p>lol</p>
@@ -46,6 +58,8 @@ function App() {
           <Route exact path="/test-component">
             <TestComponent></TestComponent>
           </Route>
+          </Switch>
+          <Footer/>
         </Router>
       
   );

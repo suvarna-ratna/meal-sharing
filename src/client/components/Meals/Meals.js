@@ -1,7 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "./Meals.css";
-import Footer from '../Footer/Footer';
-import Header from '../Header/Header';
 
 const Meals = (props) => {
     return (
@@ -13,9 +12,11 @@ const Meals = (props) => {
               <p>Title: {meal.title}</p>
               <p>Description: {meal.description}</p>
               <p>price: {meal.price}</p>
+              <Link to={`/meals/${meal.id}`}><button>Details</button></Link>
           </li>
       ) }
      </ul>
+     
         </div>
     );
 }
