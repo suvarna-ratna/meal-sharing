@@ -1,12 +1,12 @@
 import React from "react";
 import "./AboutUs.css";
-import pic from "../../assets/images/foodshare.png";
+import { download } from "../../assets/images/download.png";
 
 const Aboutus = () => {
   return (
     <div className="about">
       <h4>Food sharing</h4>
-      <img src={pic} alt="food Sharing pic" />
+      <img src={download} alt="food Sharing" />
       <h5>
         Whether it’s fruit, vegetables, or dairy, there’s a lot of food waste in
         the world each day. Luckily, many new food sharing apps are working to
