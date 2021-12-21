@@ -1,3 +1,6 @@
-.addMeal h1{
-    color: blue;
+.addMeal h1 {
+  color: blue;
+}
+.addMeal {
+  text-align: center;
 }

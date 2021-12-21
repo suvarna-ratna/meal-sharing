@@ -8,6 +8,7 @@ import AddMeal from "./components/AddMeal/AddMeal";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import MealsDetails from "./components/MealsDetails/MealsDetails";
+import ContactUs from "./components/ContactUs/ContactUs";
 
 function App() {
   const [meals, setMeals] = React.useState([]);
@@ -20,13 +21,13 @@ function App() {
         setMeals(data);
         console.log(data);
       });
-      fetch("/api/reviews")
+    fetch("/api/reviews")
       .then((response) => response.json())
       .then((data) => {
         setrReviews(data);
         console.log(data);
       });
-      fetch("/api/reservations")
+    fetch("/api/reservations")
       .then((response) => response.json())
       .then((data) => {
         setReservations(data);
@@ -34,34 +35,33 @@ function App() {
       });
   }, []);
   return (
-        <Router>
-           <Header/>
-          <Switch>
-          <Route exact path="/">
-            <Home meals={meals} />
-          </Route>
-          <Route exact path="/meals">
-            <Meals meals={meals} />
-          </Route>
-          <Route exact path="/meals/:id">
-            <MealsDetails meals={meals} />
-          </Route>
-          <Route exact path="/add-meal">
-            <AddMeal />
-          </Route>
-          <Route exact path="/about-us">
-            <AboutUs />
-          </Route>
-          <Route exact path="/lol">
-            <p>lol</p>
-          </Route>
-          <Route exact path="/test-component">
-            <TestComponent></TestComponent>
-          </Route>
-          </Switch>
-          <Footer/>
-        </Router>
-      
+    <Router>
+      <Header />
+      <Switch>
+        <Route exact path="/">
+          <Home meals={meals} />
+        </Route>
+        <Route exact path="/meals">
+          <Meals meals={meals} />
+        </Route>
+        <Route exact path="/meals/:id">
+          <MealsDetails meals={meals} />
+        </Route>
+        <Route exact path="/add-meal">
+          <AddMeal />
+        </Route>
+        <Route exact path="/about-us">
+          <AboutUs />
+        </Route>
+        <Route exact path="/contact-us">
+          <ContactUs />
+        </Route>
+        <Route exact path="/test-component">
+          <TestComponent />
+        </Route>
+      </Switch>
+      <Footer />
+    </Router>
   );
 }
 
