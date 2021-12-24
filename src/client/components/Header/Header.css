@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(95, 86, 86);
   }
   
 .header li {
@@ -23,7 +23,7 @@
   }
   
 .header .active {
-    background-color: #04AA6D;
+    background-color: #c9753d;
   }
 .header .float {
       float: left;

@@ -1,3 +1,9 @@
+.home {
+  padding-top: 0.5%;
+}
+.home span {
+  padding-left: 2%;
+}
 .home li {
   border: solid aqua 1px;
   margin: 1%;

@@ -7,7 +7,7 @@ import Footer from "../Footer/Footer";
 const Home = (props) => {
   return (
     <div className="home">
-      <h1 className="homeimg"> enjoy a taste of heaven</h1>
+      <h1 className="homeimg"><span>Enjoy a taste of Heaven!</span></h1>
     </div>
   );
 };
