@@ -1,5 +1,17 @@
 .meals li{
-    border: solid aqua 1px;
+    border: solid rgb(0, 0, 0) 1px;
     margin: 1%;
     padding: 2%;
     }
+
+    .meals {
+        padding: 2%;
+    }
+.meals span {
+    color:darkgreen;
+    font-size: large;
+}
+.meals button {
+    margin-top: 0.5%;
+    margin-right: 0.5%;
+}

@@ -10,9 +10,9 @@ const Meals = (props) => {
             <ul>
       {props.meals.map((meal)=>
           <li key={meal.id}>
-              <p>Title: {meal.title}</p>
-              <p>Description: {meal.description}</p>
-              <p>price: {meal.price}</p>
+              <p>Title: <span>{meal.title}</span></p>
+              <p>Description: <span>{meal.description}</span></p>
+              <p>Price: <span>{meal.price}</span></p>
               <Link to={`/meals/${meal.id}`}><button>Details</button></Link>
               <Link to={`/meals/${meal.id}`}><button>Reserve</button></Link>
 
