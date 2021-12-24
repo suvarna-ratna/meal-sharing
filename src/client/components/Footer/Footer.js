@@ -6,10 +6,10 @@ import { FaGithub, FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa";
 const Footer = () => {
   return (
     
-      <footer class="footer">
-  	 <div class="container">
-  	 	<div class="row">
-  	 		<div class="footer-col">
+      <footer className="footer">
+  	 <div className="container">
+  	 	<div className="row">
+  	 		<div className="footer-col">
   	 			<h4>Meal Sharing App</h4>
   	 			<ul>
   	 				<li><Link to="/" className="link">Home</Link></li>
@@ -18,7 +18,7 @@ const Footer = () => {
   	 				<li><Link to="/meals" className="link">Privacy Policy</Link></li>
   	 			</ul>
   	 		</div>
-  	 		<div class="footer-col">
+  	 		<div className="footer-col">
   	 			<h4>Get Help</h4>
   	 			<ul>
   	 				<li><Link to="/meals" className="link">Feedback</Link></li>
@@ -27,15 +27,15 @@ const Footer = () => {
   	 				<li><Link to="/meals" className="link">Reviews</Link></li>
   	 			</ul>
   	 		</div>
-  	 		<div class="footer-col">
+  	 		<div className="footer-col">
   	 			<h4>Address</h4>
   	 			<ul>
   	 				<li><Link to="/meals" className="link">HYF Copenhagen, 1111 abcde</Link></li>
   	 			</ul>
   	 		</div>
-  	 		<div class="footer-col">
+  	 		<div className="footer-col">
   	 			<h4>follow us</h4>
-  	 			<div class="social-links">
+  	 			<div className="social-links">
            <Link to="/meals" className="link"><FaGithub /></Link>
            <Link to="/meals" className="link"><FaInstagram/></Link>
            <Link to="/meals" className="link"><FaLinkedin/></Link>

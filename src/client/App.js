@@ -44,7 +44,7 @@ function App() {
           <Meals meals={meals} />
         </Route>
         <Route exact path="/meals/:id">
-          <MealsDetails meals={meals} />
+          <MealsDetails meals={meals} reservations={reservations}/>
         </Route>
         <Route exact path="/add-meal">
           <AddMeal />

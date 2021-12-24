@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import postData from "../postData";
 import "./MealsDetails.css";
@@ -17,7 +17,16 @@ const MealsDetails = (props) => {
   const meal = props.meals.filter((m) => m.id == Number(id))[0];
   const [show, setShow] = useState(false);
   const [inputValues, setInputValues] = useState(initialValues);
+  const [availReserves, setAvailReserves] = useState(null);
 
+  useEffect(() => {
+    fetch(`api/meals?availableReservations=true`)
+        .then(res => res.json())
+        .then(meals => {
+            const mealD = meals.filter((m) => m.id === Number(id))[0];
+            setAvailReserves(mealD ? mealD.No_of_available_reservations : meal.max_reservations)
+        })
+      }, [meal]);
   // Input OnChange function
   const handleOnChange = (e) => {
     const { name, value } = e.target;
@@ -58,6 +67,7 @@ const MealsDetails = (props) => {
       <div>location: <span>{meal.location}</span></div>
       <div>when: <span>{meal.when.slice(0,10)}</span></div>
       <div>Maximum Reservations: <span>{meal.max_reservations}</span></div>
+      <div>Available Reservations: <span>{availReserves}</span></div>
       </>}
       <button onClick={()=>setShow(true)}>RESERVE</button>
       <div>
@@ -81,7 +91,7 @@ const MealsDetails = (props) => {
   <label htmlFor="No_reservations">No. of Reservations:</label>
   <input type="number" id="No_reservations" name="noOfReservations" value={inputValues.noOfReservations}
             required
-            onChange={handleOnChange}/><br/></div>
+            onChange={handleOnChange} min='1' max={availReserves}/><br/></div>
 
   <button type="submit">Add Reservation</button>
 </form>
