@@ -8,7 +8,6 @@ import AddMeal from "./components/AddMeal/AddMeal";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import MealsDetails from "./components/MealsDetails/MealsDetails";
-import ContactUs from "./components/ContactUs/ContactUs";
 
 function App() {
   const [meals, setMeals] = React.useState([]);
@@ -53,9 +52,7 @@ function App() {
         <Route exact path="/about-us">
           <AboutUs />
         </Route>
-        <Route exact path="/contact-us">
-          <ContactUs />
-        </Route>
+        
         <Route exact path="/test-component">
           <TestComponent />
         </Route>

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import "./Meals.css";
 
 const Meals = (props) => {
+    const picsArray=[]                              
     return (
         <div className="meals">
             <h1>Meals</h1>
@@ -13,6 +14,7 @@ const Meals = (props) => {
               <p>Description: {meal.description}</p>
               <p>price: {meal.price}</p>
               <Link to={`/meals/${meal.id}`}><button>Details</button></Link>
+
           </li>
       ) }
      </ul>
