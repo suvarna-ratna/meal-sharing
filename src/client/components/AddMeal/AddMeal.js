@@ -53,7 +53,7 @@ const AddMeal = () => {
         
         
       </div>
-      <h3>Add Meal</h3>
+      <h3>Please provide details to add your meal</h3>
       <form onSubmit={onSubmit}>
         <div>
           <label htmlFor="title">Meal Title* : </label>
