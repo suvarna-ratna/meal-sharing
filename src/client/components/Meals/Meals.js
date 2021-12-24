@@ -14,6 +14,7 @@ const Meals = (props) => {
               <p>Description: {meal.description}</p>
               <p>price: {meal.price}</p>
               <Link to={`/meals/${meal.id}`}><button>Details</button></Link>
+              <Link to={`/meals/${meal.id}`}><button>Reserve</button></Link>
 
           </li>
       ) }

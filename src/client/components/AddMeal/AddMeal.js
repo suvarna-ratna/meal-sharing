@@ -47,7 +47,7 @@ const AddMeal = () => {
   }
 
   return (
-    <div>
+    <div className="addMeal">
       <div>
         <h3>Intreseted to become a Host ?</h3>
         

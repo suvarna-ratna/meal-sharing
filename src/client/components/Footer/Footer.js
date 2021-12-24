@@ -5,29 +5,47 @@ import { FaGithub, FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <div className="footer-content">
-        <h2>Contact Us</h2>
-        <p>write something here</p>
-        <ul className="media">
-          <li>
-            <FaGithub />
-          </li>
-          <li>
-            <FaInstagram />
-          </li>
-          <li>
-            <FaLinkedin />
-          </li>
-          <li>
-            <FaFacebook />
-          </li>
-        </ul>
-      </div>
-      <div className="footer-bottom">
-        <p>copyright &copy;2021 MealSharing . designed by @Suvarna</p>
-      </div>
-    </div>
+    
+      <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>Meal Sharing App</h4>
+  	 			<ul>
+  	 				<li><Link to="/" className="link">Home</Link></li>
+  	 				<li><Link to="/about-us" className="link">About</Link></li>
+  	 				<li><Link to="/meals" className="link">Pricing</Link></li>
+  	 				<li><Link to="/meals" className="link">Privacy Policy</Link></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Get Help</h4>
+  	 			<ul>
+  	 				<li><Link to="/meals" className="link">Feedback</Link></li>
+  	 				<li><Link to="/meals" className="link">Blog</Link></li>
+  	 				<li><Link to="/meals" className="link">Contact</Link></li>
+  	 				<li><Link to="/meals" className="link">Reviews</Link></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Address</h4>
+  	 			<ul>
+  	 				<li><Link to="/meals" className="link">HYF Copenhagen, 1111 abcde</Link></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+           <Link to="/meals" className="link"><FaGithub /></Link>
+           <Link to="/meals" className="link"><FaInstagram/></Link>
+           <Link to="/meals" className="link"><FaLinkedin/></Link>
+           <Link to="/meals" className="link"><FaFacebook/></Link>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+   
   );
 };
 

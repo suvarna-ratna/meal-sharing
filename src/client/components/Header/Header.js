@@ -5,18 +5,16 @@ import "./Header.css";
 const Header = () => {
   return (
     <div className="header">
-      <h1>
-        <Link to="/">Meal Sharing App</Link>
-      </h1>
       <ul>
+        <li className="float"><Link to="/"  className="link active" >Meal Sharing App</Link></li>
         <li>
-          <Link to="/meals">Meals</Link>
+          <Link to="/meals" className="link">Meals</Link>
         </li>
         <li>
-          <Link to="/add-meal">Add Meal</Link>
+          <Link to="/add-meal" className="link">Add Meal</Link>
         </li>
         <li>
-          <Link to="/about-us">About Us</Link>
+          <Link to="/about-us" className="link">About Us</Link>
         </li>
       </ul>
     </div>

@@ -61,7 +61,7 @@ const MealsDetails = (props) => {
       </>}
       <button onClick={()=>setShow(true)}>RESERVE</button>
       <div>
-      {show && <form onSubmit={onSubmit}>
+      {show && <><form onSubmit={onSubmit}>
       <div>
   <label htmlFor="fullname">Full Name:</label>
   <input type="text" id="fullname" name="fullName" value={inputValues.fullName}
@@ -84,7 +84,11 @@ const MealsDetails = (props) => {
             onChange={handleOnChange}/><br/><hr/></div>
 
   <button type="submit">Add Reservation</button>
-</form>}
+  
+</form>
+<button onClick={()=>setShow(false)}>Close</button></>
+}
+
 </div>
     </div>
   );
