@@ -52,12 +52,12 @@ const MealsDetails = (props) => {
     <div className="mealDetails">
       <h1>Meal-Details</h1>
       {meal && <>
-      <p>Title: <span>{meal.title}</span></p>
-      <p>Description: <span>{meal.description}</span></p>
-      <p>price: <span>{meal.price}</span></p>
-      <p>location: <span>{meal.location}</span></p>
-      <p>when: <span>{meal.when.slice(0,10)}</span></p>
-      <p>Maximum Reservations: <span>{meal.max_reservations}</span></p>
+      <div>Title: <span>{meal.title}</span></div>
+      <div>Description: <span>{meal.description}</span></div>
+      <div>price: <span>{meal.price}</span></div>
+      <div>location: <span>{meal.location}</span></div>
+      <div>when: <span>{meal.when.slice(0,10)}</span></div>
+      <div>Maximum Reservations: <span>{meal.max_reservations}</span></div>
       </>}
       <button onClick={()=>setShow(true)}>RESERVE</button>
       <div>
@@ -66,27 +66,26 @@ const MealsDetails = (props) => {
   <label htmlFor="fullname">Full Name:</label>
   <input type="text" id="fullname" name="fullName" value={inputValues.fullName}
             required
-            onChange={handleOnChange}/><br/><hr/></div>
+            onChange={handleOnChange}/><br/></div>
             <div>
   <label htmlFor="email">Email:</label>
   <input type="email" id="email" name="email" value={inputValues.email}
             required
-            onChange={handleOnChange}/><br/><hr/></div>
+            onChange={handleOnChange}/><br/></div>
             <div>
   <label htmlFor="phone">Phone Number</label>
   <input type="number" id="phone" name="phoneNumber" value={inputValues.phoneNumber}
             required
-            onChange={handleOnChange}/><br/><hr/></div>
+            onChange={handleOnChange}/><br/></div>
             <div>
   <label htmlFor="No_reservations">No. of Reservations:</label>
   <input type="number" id="No_reservations" name="noOfReservations" value={inputValues.noOfReservations}
             required
-            onChange={handleOnChange}/><br/><hr/></div>
+            onChange={handleOnChange}/><br/></div>
 
   <button type="submit">Add Reservation</button>
-  
 </form>
-<button onClick={()=>setShow(false)}>Close</button></>
+<button onClick={()=>setShow(false)}>Close Form</button></>
 }
 
 </div>

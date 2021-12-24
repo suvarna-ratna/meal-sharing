@@ -9,3 +9,7 @@
 .addMeal div {
   padding: 2%;
 }
+.addMeal button {
+  padding: 1%;
+  margin: 1%;
+}

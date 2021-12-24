@@ -1,3 +1,12 @@
 .mealDetails span {
     color:blueviolet;
 }
+.mealDetails {
+    padding: 2%;
+}
+.mealDetails div {
+    padding: 1%;
+}
+.mealDetails form{
+    padding: 1%;
+}

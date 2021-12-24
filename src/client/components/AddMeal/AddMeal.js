@@ -54,6 +54,8 @@ const AddMeal = () => {
         
       </div>
       <h3>Please provide details to add your meal</h3>
+      <br></br>
+      <hr/>
       <form onSubmit={onSubmit}>
         <div>
           <label htmlFor="title">Meal Title* : </label>
@@ -127,7 +129,7 @@ const AddMeal = () => {
             onChange={handleOnChange}
           ></textarea>
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit">Add Meal</button>
       </form>
     </div>
   );
