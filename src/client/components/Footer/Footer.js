@@ -44,6 +44,7 @@ const Footer = () => {
   	 		</div>
   	 	</div>
   	 </div>
+	   <div className="copyright"> © copyright@2021:  website developed by Suvarnaratna</div>
   </footer>
    
   );

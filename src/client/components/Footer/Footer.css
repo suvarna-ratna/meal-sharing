@@ -70,7 +70,11 @@ li{
 	color: #24262b;
 	background-color: #ffffff;
 }
-
+.footer .copyright{
+	text-align: center;
+	padding-top: 1%;
+	font-size: smaller;
+}
 @media(max-width: 767px){
   .footer-col{
     width: 50%;
