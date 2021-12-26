@@ -71,7 +71,7 @@ const MealsDetails = (props) => {
       </>}
       <button onClick={()=>setShow(true)}>RESERVE</button>
       <div>
-      {show && <><form onSubmit={onSubmit}>
+      {show && <> {availReserves>0 && <form onSubmit={onSubmit}>
       <div>
   <label htmlFor="fullname">Full Name:</label>
   <input type="text" id="fullname" name="fullName" value={inputValues.fullName}
@@ -94,8 +94,9 @@ const MealsDetails = (props) => {
             onChange={handleOnChange} min='1' max={availReserves}/><br/></div>
 
   <button type="submit">Add Reservation</button>
-</form>
-<button onClick={()=>setShow(false)}>Close Form</button></>
+</form>}
+{availReserves===0 && <h1>Sorry, Fully Booked</h1>}
+<button onClick={()=>setShow(false)}>Close Reserve</button></>
 }
 
 </div>
