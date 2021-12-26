@@ -95,7 +95,7 @@ const MealsDetails = (props) => {
 
   <button type="submit">Add Reservation</button>
 </form>}
-{availReserves===0 && <h1>Sorry, Fully Booked</h1>}
+{availReserves==0 && <h1>Sorry, Fully Booked</h1>}
 <button onClick={()=>setShow(false)}>Close Reserve</button></>
 }
 
