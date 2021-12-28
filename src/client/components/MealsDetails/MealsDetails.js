@@ -91,7 +91,7 @@ const MealsDetails = (props) => {
   <label htmlFor="phone">Phone Number</label>
   <input type="tel" id="phone" name="phoneNumber" value={inputValues.phoneNumber}
             required
-            onChange={handleOnChange}/><br/></div>npm run dev
+            onChange={handleOnChange}/><br/></div>
 
             <div>
   <label htmlFor="No_reservations">No. of Reservations:</label>
