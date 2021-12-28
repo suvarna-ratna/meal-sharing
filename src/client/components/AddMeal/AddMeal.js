@@ -56,7 +56,7 @@ const AddMeal = () => {
       <h3>Please provide details to add your meal</h3>
       <br></br>
       <hr/>
-      <form onSubmit={onSubmit}>
+      <form  className = "bg-img" onSubmit={onSubmit}>
         <div>
           <label htmlFor="title">Meal Title* : </label>
           <input
