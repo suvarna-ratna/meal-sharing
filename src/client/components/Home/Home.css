@@ -1,23 +1,26 @@
-.home {
-  padding-top: 0.5%;
-}
-.home span {
-  padding-left: 2%;
-}
-.home li {
-  border: solid aqua 1px;
-  margin: 1%;
-  padding: 2%;
-}
 .homeimg {
-  background-image: url("../../assets/images/sharemeal.png");
+  background-image: url('../../assets/images/sharemeal.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  margin-bottom: 5px;
+  margin: 5px 0;
   padding-top: 40px;
   padding-bottom: 50px;
-  min-height: 900px;
+  min-height: 500px;
   min-width: 800px;
+  text-align: center;
+}
+
+.homeimg .search_input_box{
+  margin-top: 5%;
+}
+ .homeimg .welcome{
+  color: #fff;
+  font-size: 40px;
+  font-style: inherit;
+  top:50%;
+  left:45%;
+}
+.homeimg .welcome span {
+  background-color: rgba(0, 0, 0, 0.3);
 }

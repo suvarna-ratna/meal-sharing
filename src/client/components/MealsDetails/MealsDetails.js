@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import postData from "../postData";
 import "./MealsDetails.css";
 import Moment from 'moment';
+import Pics from "../Meals/Pics";
+import Nigiri from "../../assets/images/pics/Nigiri.png";
 
 const initialValues = {
   fullName: "",
@@ -14,7 +16,8 @@ const date = Moment(new Date()).format('YYYY-MM-DD');
 
 const MealsDetails = (props) => {
   const { id } = useParams();
-  const meal = props.meals.filter((m) => m.id == Number(id))[0];
+  const [index,setIndex]=useState(0);
+  const meal = props.meals.filter((m,i) => m.id == Number(id))[0];
   const [show, setShow] = useState(false);
   const [inputValues, setInputValues] = useState(initialValues);
   const [availReserves, setAvailReserves] = useState(null);
@@ -24,6 +27,7 @@ const MealsDetails = (props) => {
         .then(res => res.json())
         .then(meals => {
             const mealD = meals.filter((m) => m.id === Number(id))[0];
+            setIndex(props.meals.map((m)=>m.id).indexOf(Number(id)));
             setAvailReserves(mealD ? mealD.No_of_available_reservations : meal.max_reservations)
         })
       }, [meal]);
@@ -60,6 +64,7 @@ const MealsDetails = (props) => {
   return (
     <div className="mealDetails">
       <h1>Meal-Details</h1>
+      <img src={Pics[index] || Nigiri} alt='foodpic'/>
       {meal && <>
       <div>Title: <span>{meal.title}</span></div>
       <div>Description: <span>{meal.description}</span></div>

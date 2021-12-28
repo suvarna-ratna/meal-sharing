@@ -2,15 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Meals.css";
 import Nigiri from "../../assets/images/pics/Nigiri.png";
+import pics from './Pics';
 
 const Meals = (props) => {
-  const picsArray = [
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaKG9KKJ-FMZA1lx1gNj3KweqIB-toPrqYbw&usqp=CAU",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWMmteoUdhuYSpQCs8JMkJ89dKhvw4CaLuwg&usqp=CAU",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiaynUbxzM2a2zx7DlsAXiw7dJo-zqsBrN0w&usqp=CAU",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR37jcwj1ki-xlSSojNd3r0Zco_u6aijFdAJw&usqp=CAU",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpj3rV_BxqsOvJZ2RCtCCzBgQULXJxzoH54w&usqp=CAU",
-  ];
+  const picsArray = pics;
   return (
     <div className="meals">
       <h1>Meals</h1>

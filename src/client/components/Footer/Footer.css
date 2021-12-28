@@ -74,6 +74,7 @@
 	text-align: center;
 	padding-top: 1%;
 	font-size: smaller;
+	color: #bbbbbb;
 }
 @media(max-width: 767px){
   .footer .footer-col{
