@@ -89,9 +89,10 @@ const MealsDetails = (props) => {
             onChange={handleOnChange}/><br/></div>
             <div>
   <label htmlFor="phone">Phone Number</label>
-  <input type="number" id="phone" name="phoneNumber" value={inputValues.phoneNumber}
+  <input type="tel" id="phone" name="phoneNumber" value={inputValues.phoneNumber}
             required
-            onChange={handleOnChange}/><br/></div>
+            onChange={handleOnChange}/><br/></div>npm run dev
+
             <div>
   <label htmlFor="No_reservations">No. of Reservations:</label>
   <input type="number" id="No_reservations" name="noOfReservations" value={inputValues.noOfReservations}
