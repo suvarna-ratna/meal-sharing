@@ -1,17 +1,65 @@
-.meals li{
-    border: solid rgb(0, 0, 0) 1px;
-    margin: 1%;
-    padding: 2%;
-    }
+.meals .mealsRow {
+    display: flex;
+    flex-direction: column;
+}
+/* Three columns side by side */
+.meals .column {
+    float: left;
+    width: 250px;
+    margin: 16px;
+    border: solid 1px black;
+    background-color: £c9753d;
+    text-align: center;
+  }
+  .meals img {
+      width: 100%;
+      height: auto;
+  }
 
-    .meals {
-        padding: 2%;
+  .meals .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .meals .column {
+      width: 100%;
+      display: block;
     }
-.meals span {
-    color:darkgreen;
-    font-size: large;
-}
-.meals button {
-    margin-top: 0.5%;
-    margin-right: 0.5%;
-}
+  }
+  
+  /* Add some shadows to create a card effect */
+  .meals .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Some left and right padding inside the container */
+  .meals .container {
+    padding: 0 16px;
+  }
+  
+  /* Clear floats */
+  .meals .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .meals .title {
+    color: grey;
+  }
+  
+  .meals .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: rgb(148, 172, 83);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .meals .button:hover {
+    background-color: rgb(209, 112, 112);
+  }

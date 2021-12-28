@@ -5,7 +5,7 @@ import { FaGithub, FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    
+    <div>
       <footer className="footer">
   	 <div className="container">
   	 	<div className="row">
@@ -46,7 +46,7 @@ const Footer = () => {
   	 </div>
 	   <div className="copyright"> © copyright@2021:  website developed by Suvarnaratna</div>
   </footer>
-   
+  </div>
   );
 };
 
