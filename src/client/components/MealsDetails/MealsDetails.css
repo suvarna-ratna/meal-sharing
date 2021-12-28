@@ -3,10 +3,26 @@
 }
 .mealDetails {
     padding: 2%;
+    text-align: center;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNMoYG2Ybd3419T06c277cmHKQwGC_FNq5lQ&usqp=CAU');
 }
 .mealDetails div {
     padding: 1%;
 }
 .mealDetails form{
     padding: 1%;
+     
 }
+.ReservationForm {
+    text-align: center;  
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(99, 125, 158, 0.6);
+    max-width: 750px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-block: 15px;
+    border-radius: 7px;
+  }
+  
+  

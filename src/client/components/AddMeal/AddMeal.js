@@ -48,15 +48,10 @@ const AddMeal = () => {
 
   return (
     <div className="addMeal">
-      <div>
-        <h3>Intreseted to become a Host ?</h3>
-        
-        
-      </div>
-      <h3>Please provide details to add your meal</h3>
-      <br></br>
-      <hr/>
-      <form  className = "bg-img" onSubmit={onSubmit}>
+      <div className="heading"> 
+        <h3>Please provide details to add your meal</h3>
+        </div>
+       <form  className = "bg-img" onSubmit={onSubmit}>
         <div>
           <label htmlFor="title">Meal Title* : </label>
           <input

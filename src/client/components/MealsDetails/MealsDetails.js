@@ -76,8 +76,8 @@ const MealsDetails = (props) => {
       </>}
       <button onClick={()=>setShow(true)}>RESERVE</button>
       <div>
-      {show && <> {availReserves>0 && <form onSubmit={onSubmit}>
-      <div>
+      {show && <> {availReserves>0 && <form onSubmit={onSubmit} className="ReservationForm">
+      <div >
   <label htmlFor="fullname">Full Name:</label>
   <input type="text" id="fullname" name="fullName" value={inputValues.fullName}
             required

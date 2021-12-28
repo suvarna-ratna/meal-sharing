@@ -8,7 +8,7 @@ const Meals = (props) => {
   const picsArray = pics;
   return (
     <div className="meals">
-      <h1>Meals</h1>
+      <h1>Available Meals</h1>
       <div className="mealsRow">
       <ul>
         {props.meals.map((meal, i) => (
@@ -19,13 +19,13 @@ const Meals = (props) => {
                 <div className="container">
                   <h3 className="title">
                      <span>{meal.title}</span>
-                  </h3>
+                  </h3><hr></hr>
                   <p>
                     Description: <span>{meal.description}</span>
-                  </p>
+                  </p><hr></hr>
                   <p>
                     Price: <span>{meal.price}</span>
-                  </p>
+                  </p><hr></hr>
                   <p className="details">
                     <Link to={`/meals/${meal.id}`}>
                       <button >Details</button>
