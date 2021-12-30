@@ -27,8 +27,8 @@ const Meals = (props) => {
                     Price: <span>{meal.price}</span>
                   </p><hr></hr>
                   <p className="details">
-                    <Link to={`/meals/${meal.id}`}>
-                      <button >Details</button>
+                    <Link to={`/meals/${meal.id}/reviews`}>
+                      <button >Reviews</button>
                     </Link>
                   </p>
                   <p className="reserve">

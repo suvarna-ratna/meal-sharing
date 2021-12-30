@@ -28,10 +28,11 @@ const Footer = () => {
   	 			</ul>
   	 		</div>
   	 		<div className="footer-col">
-  	 			<h4>Address</h4>
-  	 			<ul>
-  	 				<li><Link to="/meals" className="link">HYF Copenhagen, 1111 abcde</Link></li>
-  	 			</ul>
+  	 			<h4 >Address</h4>
+				   <ul> 
+  	 			
+<li ><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d562.6390070022399!2d12.539740254828313!3d55.661930599559774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652539aed46bb31%3A0x352c940085c22f73!2sDISIE%20(Danish%20Institute%20for%20Sustainable%20Innovation%20%26%20Entrepreneurship)!5e0!3m2!1sda!2sdk!4v1623332383917!5m2!1sda!2sdk" className="location"></iframe>
+</li></ul>
   	 		</div>
   	 		<div className="footer-col">
   	 			<h4>follow us</h4>

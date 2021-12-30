@@ -72,9 +72,13 @@
 }
 .footer .copyright{
 	text-align: center;
-	padding-top: 1%;
+	padding-top: 2%;
 	font-size: smaller;
 	color: #bbbbbb;
+}
+.footer .location{
+	width: 90%;
+	height: 120px;
 }
 @media(max-width: 767px){
   .footer .footer-col{

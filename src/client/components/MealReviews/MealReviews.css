@@ -1,18 +1,18 @@
-.mealDetails span {
+.mealReviews span {
     color:blueviolet;
 }
-.mealDetails {
+.mealReviews {
     padding: 2%;
     text-align: center;
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNMoYG2Ybd3419T06c277cmHKQwGC_FNq5lQ&usqp=CAU');
 }
-.mealDetails div {
+.mealReviews div {
     padding: 1%;
 }
-.mealDetails form{
+.mealReviews form{
     padding: 1%;
 }
-.ReservationForm {
+.mealReviews .ReviewForm {
     text-align: center;  
     display: flex;
     flex-direction: column;
@@ -23,5 +23,3 @@
     padding-block: 15px;
     border-radius: 7px;
   }
-  
-  
