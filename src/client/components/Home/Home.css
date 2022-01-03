@@ -1,4 +1,4 @@
-.homeimg {
+/* .homeimg {
   background-image: url('../../assets/images/sharemeal.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -9,18 +9,33 @@
   min-height: 500px;
   min-width: 800px;
   text-align: center;
-}
+} */
 
-.homeimg .search_input_box{
+.homeimg .search_input_box {
   margin-top: 5%;
+  text-align: center;
 }
- .homeimg .welcome{
-  color: #fff;
+.homeimg .search_meal_list {
+  list-style: none;
+  text-align: center;
+  padding: 1% 0 0 0;
+  border: solid 1px black;
+  display: block;
+  float: left;
+  width: 350px;
+  margin: 16px;
+}
+.homeimg .welcome {
+  color: red;
   font-size: 40px;
   font-style: inherit;
-  top:50%;
-  left:45%;
+  top: 50%;
+  left: 45%;
 }
-.homeimg .welcome span {
+/* .homeimg .welcome span {
   background-color: rgba(0, 0, 0, 0.3);
+} */
+.homeimg img {
+  width: 100%;
+  height: auto;
 }

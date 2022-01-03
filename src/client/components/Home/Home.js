@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
 import './Home.css';
+import home from '../../assets/images/sharemeal.png';
+
 
 const Home = () => {
   const [searchMeal, setSearchMeal] = useState("");
@@ -26,7 +28,7 @@ const Home = () => {
   return (
     <div className="homeimg">
       <div className="about">
-        <h1 className="welcome"><span>Welcome To Meal Share!</span></h1>
+        <h1 className="welcome"><span>Welcome To Meal Share</span></h1>
         <div>
           <div className="search_input_box">
             {/* <FaSearch /> */}
@@ -55,13 +57,13 @@ const Home = () => {
                   ) : (
                     <div className="search_meal_box">
                       <h4>
-                        <span>Meal Information</span>
-                      </h4>
-                      <h4>
                         <span>Meal Title:</span> {meal.title}
                       </h4>
                       <h4>
                         <span>Location: </span> {meal.location}
+                      </h4>
+                      <h4>
+                        <span>Price: </span> {meal.price} DKK
                       </h4>
                       <Link to={`meals/${meal.id}`}>
                         <button>More Details...</button>
@@ -73,6 +75,7 @@ const Home = () => {
             })}
         </div>
       </div>
+      <img src={home} alt='homeimg'/>
     </div>
   );
 };
