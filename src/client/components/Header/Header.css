@@ -1,0 +1,33 @@
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(95, 86, 86);
+    
+  }
+  
+.header li {
+    float: right;
+  }
+  
+.header li .link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    
+  }
+  
+.header li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+.header .active {
+    background-color: #c9753d;
+    
+  }
+.header .float {
+      float: left;
+  }
