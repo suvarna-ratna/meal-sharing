@@ -1,36 +1,33 @@
 .mealReviews span {
-    color:blueviolet;
+  color: blueviolet;
 }
 .mealReviews {
-    padding: 2%;
-    text-align: center;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNMoYG2Ybd3419T06c277cmHKQwGC_FNq5lQ&usqp=CAU');
+  padding: 2%;
+  text-align: center;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNMoYG2Ybd3419T06c277cmHKQwGC_FNq5lQ&usqp=CAU");
 }
 .mealReviews div {
-    padding: 1%;
+  padding: 1%;
 }
-.mealReviews form{
-    padding: 1%;
+.mealReviews form {
+  padding: 1%;
 }
 .mealReviews .ReviewForm {
-    text-align: center;  
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(99, 125, 158, 0.6);
-    max-width: 750px;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-block: 15px;
-    border-radius: 7px;
-  }
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(99, 125, 158, 0.6);
+  max-width: 750px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-block: 15px;
+  border-radius: 7px;
+}
 
-  .mealReviews .card {
-    display: block;
-    float: left;
-    width: 350px;
-    margin: 16px;
-    border: solid 1px black;
-    background-color: #e99c55;
-    text-align: center;
-    height: 600px;
-  }
+.mealReviews .card {
+  width: 350px;
+  margin: 16px;
+  border: solid 1px black;
+  background-color: #e99c55;
+  text-align: center;
+}
