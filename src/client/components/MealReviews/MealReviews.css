@@ -24,7 +24,15 @@
   border-radius: 7px;
 }
 
+.mealReviews .reviewsRow {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-direction: column;
+}
 .mealReviews .card {
+  display: block;
+  float: left;
   width: 350px;
   margin: 16px;
   border: solid 1px black;

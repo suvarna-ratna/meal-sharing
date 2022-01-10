@@ -62,7 +62,7 @@ const reviews = props.reviews.filter((r)=>r.meal_id==id);
       <div>when: <span>{meal.when.slice(0,10)}</span></div>
       <div>Maximum Reservations: <span>{meal.max_reservations}</span></div>
       </>}
-      <div><ul>
+      <div className="reviewsRow"><ul>
         {reviews.map((review, i) => (
           <li key={(review.id, i)}>
             <div className="column card">
