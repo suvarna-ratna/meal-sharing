@@ -79,7 +79,7 @@ const reviews = props.reviews.filter((r)=>r.meal_id==id);
 stars={review.stars}
 size={17} //optional
 spacing={2} //optional
-fill='#fff' //optional
+fill='#8a2be2' //optional
 />
                   </p><hr></hr>
                 </div>
