@@ -79,7 +79,7 @@ const reviews = props.reviews.filter((r)=>r.meal_id==id);
 stars={review.stars}
 size={17} //optional
 spacing={2} //optional
-fill='#ea9c46' //optional
+fill='#fff' //optional
 />
                   </p><hr></hr>
                 </div>
@@ -91,7 +91,7 @@ fill='#ea9c46' //optional
       <button onClick={()=>setShow(true)}>ADD REVIEW</button>
       <p className="reserve">
                     <Link to={`/meals/${meal.id}`}>
-                      <button >Reserve</button>
+                      <button>Go To Reserve Page</button>
                     </Link>
                   </p>
       <div>
