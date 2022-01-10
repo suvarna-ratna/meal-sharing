@@ -23,3 +23,14 @@
     padding-block: 15px;
     border-radius: 7px;
   }
+
+  .mealReviews .card {
+    display: block;
+    float: left;
+    width: 350px;
+    margin: 16px;
+    border: solid 1px black;
+    background-color: #e99c55;
+    text-align: center;
+    height: 600px;
+  }
