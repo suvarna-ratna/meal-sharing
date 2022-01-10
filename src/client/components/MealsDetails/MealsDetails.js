@@ -93,9 +93,9 @@ const MealsDetails = (props) => {
         </>
       )}
       <button onClick={() => setShow(true)}>RESERVE</button>
-      <button>
-        <Link to={`/meals/${meal.id}/reviews`}>REVIEWS</Link>
-      </button>
+      <Link to={`/meals/${meal.id}/reviews`}><button>
+        REVIEW
+      </button></Link>
       <div>
         {show && (
           <>
